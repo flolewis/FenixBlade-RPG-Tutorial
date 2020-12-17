@@ -26,7 +26,7 @@ public class DoorTrigger : MonoBehaviour
 
     private void DoorAnimTrigger(){
         isOpen = !isOpen;
-        if(indicator.activeInHierarchy && Input.GetKey(KeyCode.F)){
+        if(indicator.activeInHierarchy && Input.GetKeyDown(KeyCode.F)){
             animator.SetBool("Open",isOpen);
         }
     }
